@@ -31,7 +31,6 @@ string divide(string data, string generator)
 
         temp += data[i];
     }
-
     if (temp[0] == '1')
         temp = xorOperation(generator, temp);
     else
@@ -56,10 +55,10 @@ int main()
 
     
     string remainder = divide(dataWithZeros, generator);
-
+  
     
     string codeword = data + remainder;
-
+ 
     cout << "CRC Remainder: " << remainder << endl;
     cout << "Codeword to Send: " << codeword << endl;
 
