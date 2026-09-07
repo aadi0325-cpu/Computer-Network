@@ -34,7 +34,7 @@ bool isValidIPv4(const string& ipStr, IPv4& ipObj) {
 
 int main() {
     string inputIp;
-    cout << "Enter an IPv4 address (e.g., 192.168.1.50): ";
+    cout << "Enter an IPv4 address : ";
     cin >> inputIp;
 
     IPv4 ip;
@@ -81,8 +81,8 @@ int main() {
         ipClass = 'E';
     }
 
-    cout << "\n--- IPv4 Address Analysis ---" << endl;
-    cout << "Your IP Address is valid:   " << inputIp << endl;
+   
+    cout << "Your IP Address is valid:   "  << endl;
     cout << "your address belongs to Class: " << ipClass << endl;
 
     if (ipClass == 'A' || ipClass == 'B' || ipClass == 'C') {
